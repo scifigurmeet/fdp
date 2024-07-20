@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuti Chug's Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .bio {
+            text-align: center;
+            color: #555;
+        }
+        .bio p {
+            line-height: 1.6;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #0077b5; /* LinkedIn blue */
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .social-links a:hover {
+            color: #005582; /* Darker LinkedIn blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stuti Chug</h1>
+        <img src="https://www.example.com/profile-pic.jpg" alt="Stuti Chug" class="profile-pic">
+        <div class="bio">
+            <p>Hello! I'm Stuti Chug, a professional with expertise in the field of software development and data analytics. I have a strong background in technology and a passion for creating innovative solutions to complex problems. With extensive experience in project management and a deep understanding of the latest industry trends, I am dedicated to driving success in all my professional endeavors.</p>
+            <p>Feel free to connect with me on LinkedIn to learn more about my professional journey and experiences.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/stuti-chug-027181234/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    <script>
+        // JavaScript to dynamically fetch LinkedIn profile picture (if applicable)
+        // Note: This example assumes you have a way to get the profile picture URL.
+        // In a real scenario, you might need to use LinkedIn API (with proper authentication).
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example function to fetch LinkedIn profile picture
+            function fetchLinkedInProfilePic() {
+                // Assuming you have an endpoint or method to fetch the picture URL
+                // This is a placeholder and won't work without a real implementation
+                const profilePicUrl = 'https://www.example.com/profile-pic.jpg'; // Replace with actual fetch logic
+                document.querySelector('.profile-pic').src = profilePicUrl;
+            }
+
+            fetchLinkedInProfilePic();
+        });
+    </script>
+</body>
+</html>
